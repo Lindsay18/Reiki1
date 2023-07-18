@@ -7,29 +7,33 @@
 }
 
 body {
-    background-image: url(../images/);
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
     font-family: Montserrat, sans-serif;
     font-weight: 300;
-    color: black;
+    color: rgba(109, 106, 106, 0.904);
+    background-color: bisque;
+    background-image: url('../images/lotus.webp');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 2px solid;
+    border-color: black;
 }
 
-/* headings and loo */
+/* headings and logo */
 
 h1,
 h2 {
     font-family: Nunito, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #0b0911;
+    color: rgb(85, 82, 3);
 }
 
 #logo {
     float: left;
     font-size: 290%;
+    margin-left: 20px;
 }
 
 /* navigation links */
@@ -53,7 +57,7 @@ logo {
 
 #menu a {
     text-decoration: none;
-    color: inherit;
+    color: rgba(85, 82, 3);
 }
 
 #menu a:hover {
@@ -62,4 +66,63 @@ logo {
 
 .active {
     border-bottom: 2px solid #3a3a3a;
+}
+
+/* cards */
+
+.container {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.card {
+    background: white;
+    width: 400px;
+    height: 560px;
+    margin: 25px;
+    border-radius: 15px;
+}
+
+.card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+.reiki {
+    background-image: url('../images/reiki1.webp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.history {
+    background-image: url('../images/meditation.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.benefits {
+    background-image: url('../images/benefits.webp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card p {
+    padding: 10px
+}
+
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.09);
+    transition: all 2s ease;
 }
